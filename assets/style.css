@@ -1,0 +1,62 @@
+/* 앱 정책 페이지 공통 스타일.
+   - 라이트 모드 고정: 스토어 심사자·이용자가 어떤 환경에서 열어도 같은 화면
+   - 시스템 글꼴, 외부 요청 0 (정책 페이지 자체가 추적하지 않는다)
+   - 앱별 색은 페이지의 --accent 한 가지로만 */
+:root {
+  color-scheme: light;
+  --bg: #F6F5F2;
+  --paper: #FFFFFF;
+  --ink: #111827;
+  --ink-soft: #4B5563;
+  --line: #E5E3DE;
+  --accent: #6E6CF0;
+  --accent-wash: #EEEEFD;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  padding: 0 16px 72px;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.75 -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+::selection { background: var(--accent-wash); }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+.wrap { max-width: 720px; margin-inline: auto; }
+
+.top { padding: 24px 0 0; font-size: 0.9rem; }
+.top a { color: var(--ink-soft); text-decoration: none; }
+.top a:hover { color: var(--ink); }
+
+header.hero { display: flex; align-items: center; gap: 16px; margin: 24px 0 20px; }
+.mark { width: 64px; height: 64px; flex: none; border-radius: 16px; box-shadow: 0 4px 14px rgba(17, 24, 39, 0.10); }
+.hero h1 { font-size: clamp(1.5rem, 5vw, 1.9rem); line-height: 1.25; margin: 0 0 4px; letter-spacing: -0.02em; }
+.hero .meta { color: var(--ink-soft); font-size: 0.9rem; margin: 0; }
+
+.lead { background: var(--accent-wash); border-radius: 16px; padding: 16px 18px; margin: 0 0 14px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 28px; padding: 0; list-style: none; }
+.chips li { font-size: 0.85rem; font-weight: 600; background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; }
+
+section.card { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; margin: 0 0 12px; }
+section.card h2 { font-size: 1.05rem; margin: 0 0 6px; display: flex; gap: 10px; align-items: baseline; }
+section.card h2 .n { color: var(--accent); font-variant-numeric: tabular-nums; }
+section.card p, section.card ul { margin: 0 0 8px; }
+section.card p:last-child, section.card ul:last-child { margin-bottom: 0; }
+section.card ul { padding-left: 1.1em; }
+section.card li + li { margin-top: 4px; }
+.note { background: var(--bg); border-radius: 12px; padding: 10px 14px; color: var(--ink-soft); }
+
+hr.lang { border: 0; border-top: 1px solid var(--line); margin: 40px 0 8px; }
+footer { color: var(--ink-soft); font-size: 0.85rem; margin-top: 32px; text-align: center; }
+
+/* 앱 목록 (index) */
+ul.apps { list-style: none; padding: 0; margin: 24px 0; }
+ul.apps li a { display: flex; align-items: center; gap: 14px; background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 14px 16px; margin-bottom: 10px; color: var(--ink); text-decoration: none; min-height: 48px; }
+ul.apps li a:hover { border-color: var(--ink-soft); }
+ul.apps img { width: 44px; height: 44px; border-radius: 11px; }
+ul.apps .name { font-weight: 600; }
+ul.apps .sub { color: var(--ink-soft); font-size: 0.88rem; display: block; }
