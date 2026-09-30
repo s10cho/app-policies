@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TokenBar 지원</title>
+<meta name="description" content="TokenBar macOS 메뉴 막대 앱 설정과 지원 안내">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root { --accent: #289cb7; --accent-wash: #e6f8fb; }</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="top"><a href="../">← 앱 정책 목록</a></nav>
+  <header class="hero"><img class="mark" src="icon.png" alt="TokenBar 아이콘" width="64" height="64"><div><h1>TokenBar 지원</h1><p class="meta">Codex·Claude Code 로컬 사용량을 Mac 메뉴 막대에서 확인</p></div></header>
+  <section class="card"><h2>시작하기</h2><p>TokenBar를 실행하고 메뉴 막대의 아이콘을 누르세요. <b>설정 → 로컬 기록 접근</b>에서 Codex의 <code>~/.codex</code> 폴더와 Claude Code의 <code>~/.claude</code> 폴더를 각각 선택하세요. 파일 선택창에 숨김 폴더가 표시됩니다. 읽기 권한만 요청합니다.</p></section>
+  <section class="card"><h2>한도가 표시되지 않을 때</h2><p>토큰 수는 이 Mac에 남은 최근 세션 기록을 집계합니다. 한도 사용률은 토큰 수로 추정하지 않고, 제공자가 로컬 기록에 남긴 값만 표시합니다. Codex의 5시간 항목처럼 요금제에 없는 한도는 표시되지 않습니다. Claude의 5시간·주간 한도는 기존 Claude Code statusLine 연동이 <code>.claude/token-bar-rate-limits.json</code> 파일을 갱신하는 경우에만 나타납니다.</p></section>
+  <section class="card"><h2>갱신과 개인정보</h2><p><b>지금 갱신</b>을 누르거나 설정에서 자동 갱신 간격을 바꿀 수 있습니다. 기록은 기기 안에서만 읽습니다. 자세한 내용은 <a href="privacy.html">개인정보처리방침</a>을 확인하세요.</p></section>
+  <section class="card"><h2>문의</h2><p><a href="https://github.com/s10cho/app-policies/issues/new">GitHub 이슈</a>로 문의해 주세요. 이슈는 공개될 수 있으므로 세션 기록이나 인증 정보를 첨부하지 마세요.</p></section>
+  <footer>TokenBar · macOS 13 이상</footer>
+</div>
+</body>
+</html>

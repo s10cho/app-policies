@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 — TokenBar</title>
+<meta name="description" content="TokenBar 개인정보처리방침. 사용자가 선택한 로컬 기록을 읽고 외부로 전송하지 않습니다.">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root { --accent: #289cb7; --accent-wash: #e6f8fb; }</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="top"><a href="../">← 앱 정책 목록</a> · <a href="./">TokenBar 지원</a></nav>
+  <header class="hero">
+    <img class="mark" src="icon.png" alt="TokenBar 아이콘" width="64" height="64">
+    <div><h1>개인정보처리방침</h1><p class="meta">TokenBar · 시행일 2026년 9월 30일</p></div>
+  </header>
+
+  <p class="lead"><strong>TokenBar는 사용자가 선택한 이 Mac의 Codex·Claude Code 기록을 기기 안에서 읽습니다.</strong> 운영자에게 기록이나 사용량을 전송하지 않습니다.</p>
+  <ul class="chips"><li>로컬 처리</li><li>외부 전송 없음</li><li>광고 없음</li><li>추적 없음</li><li>로그인 없음</li></ul>
+
+  <section class="card"><h2><span class="n">1</span>읽는 데이터</h2>
+    <p>사용자가 허용한 <code>.codex</code> 또는 <code>.claude</code> 폴더 안의 로컬 세션 기록에서 토큰 수와 제공자가 기록한 한도 사용률·초기화 시각을 읽습니다. 세션 기록에는 대화 내용이 함께 들어 있을 수 있지만, 앱은 사용량 계산에 필요한 필드만 해석하고 대화 내용을 화면에 표시하거나 별도로 저장하지 않습니다. Claude 한도 값은 해당 폴더에 이미 존재하는 TokenBar 한도 파일이 있을 때만 읽습니다.</p>
+  </section>
+  <section class="card"><h2><span class="n">2</span>저장</h2>
+    <p>표시 방식, 갱신 간격, 제공자 순서와 사용자가 선택한 폴더의 읽기 전용 접근 권한을 이 Mac의 앱 저장 공간에 보관합니다. 세션 기록은 복사하거나 서버에 업로드하지 않습니다. 폴더 원본은 해당 CLI 앱이 관리하며 TokenBar가 삭제하지 않습니다.</p>
+  </section>
+  <section class="card"><h2><span class="n">3</span>네트워크·제3자</h2>
+    <p>현재 macOS 앱에는 계정, 분석 도구, 광고 SDK, 추적기 또는 자체 서버 통신이 없습니다. TokenBar는 사용량, 세션 기록, 설정을 운영자나 제3자에게 전송하지 않습니다.</p>
+  </section>
+  <section class="card"><h2><span class="n">4</span>권한과 선택</h2>
+    <p>앱은 macOS 파일 선택창에서 사용자가 직접 고른 폴더에 대해 읽기 전용 접근을 요청합니다. 폴더를 선택하지 않으면 해당 제공자의 기록을 읽지 않습니다. macOS 설정에서 접근을 취소하거나 앱을 삭제할 수 있습니다.</p>
+  </section>
+  <section class="card"><h2><span class="n">5</span>변경과 문의</h2>
+    <p>데이터 처리 방식이 달라지면 배포 전에 이 페이지를 갱신합니다. 문의는 <a href="https://github.com/s10cho/app-policies/issues/new">GitHub 이슈</a>에서 받을 수 있습니다. 이슈는 공개될 수 있으므로 세션 기록이나 계정 정보를 올리지 마세요.</p>
+  </section>
+
+  <hr class="lang">
+  <header class="hero" lang="en"><div><h1>Privacy Policy</h1><p class="meta">TokenBar · Effective September 30, 2026</p></div></header>
+  <div lang="en">
+    <p class="lead"><strong>TokenBar reads the Codex and Claude Code folders you select on this Mac.</strong> It does not send logs or usage data to the developer.</p>
+    <section class="card"><h2>Data read</h2><p>The app reads token counts and provider-reported quota percentages and reset times from local session records in the selected <code>.codex</code> and <code>.claude</code> folders. Session files can contain conversation content; TokenBar parses only fields needed for usage totals and does not display or separately store conversation content. Claude quota data appears only when an existing local TokenBar quota file is available.</p></section>
+    <section class="card"><h2>Storage</h2><p>Display preferences, refresh interval, provider order, and read-only folder bookmarks are stored in the app's local container. TokenBar does not copy session files or upload them. It does not delete source files.</p></section>
+    <section class="card"><h2>Network and third parties</h2><p>The current macOS app has no accounts, analytics, advertising SDKs, trackers, or app server requests. It does not transmit logs, usage totals, or settings to us or to third parties.</p></section>
+    <section class="card"><h2>Permission and choice</h2><p>The app asks for read-only access to folders you select in the macOS file picker. It does not read a provider's records until you select that folder. You can revoke access in macOS or remove the app.</p></section>
+    <section class="card"><h2>Changes and contact</h2><p>We will update this page before changing how data is handled. For questions, open a <a href="https://github.com/s10cho/app-policies/issues/new">GitHub issue</a>. Issues may be public; do not post session logs or account details.</p></section>
+  </div>
+  <footer>TokenBar · 광고 없음 · 인앱 결제 없음</footer>
+</div>
+</body>
+</html>

@@ -8,6 +8,7 @@ app-maker 로 만든 앱들의 **개인정보처리방침** 공개 페이지. Gi
 
 | 앱 | 방침 | 시행일 |
 |---|---|---|
+| TokenBar | [tokenbar/privacy.html](tokenbar/privacy.html) | 2026-09-30 |
 | Voice Sprint | [voice-sprint/privacy.html](voice-sprint/privacy.html) | 2026-09-30 |
 
 ## 원칙
