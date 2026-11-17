@@ -9,6 +9,7 @@
 
 | 앱 | 방침 | 시행일 |
 |---|---|---|
+| AD Password Day | [ad-password-day/privacy.html](ad-password-day/privacy.html) | 2026-11-17 |
 | TokenBar | [tokenbar/privacy.html](tokenbar/privacy.html) | 2026-11-17 |
 | Voice Sprint | [voice-sprint/privacy.html](voice-sprint/privacy.html) | 2026-11-17 |
 

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AD Password Day — 소개</title>
+<meta name="description" content="Mac 메뉴 막대에서 회사 AD 비밀번호의 만료일을 확인하고 변경하는 앱. 지원 환경과 선택적 키체인 저장, 체험 모드를 안내합니다.">
+<link rel="canonical" href="https://s10cho.github.io/app-policies/ad-password-day/">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+:root { --accent: #1553AB; --accent-wash: #EAF2FC; }
+.page-nav { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 16px 0 22px; }
+.page-nav a { min-height: 32px; display: inline-flex; align-items: center; }
+.page-nav a[aria-current="page"] { color: var(--ink); font-weight: 600; }
+section.card ol { padding-left: 1.3em; margin: 0; }
+section.card h3 { font-size: 1.05rem; margin: 0 0 6px; }
+.translation-title { margin: 24px 0 4px; font-size: 1.5rem; line-height: 1.3; }
+.translation-date { color: var(--ink-soft); font-size: .9rem; margin: 0 0 20px; }
+.skip { position: absolute; left: 16px; top: -100px; background: var(--paper); padding: 8px 12px; border: 2px solid var(--accent); }
+.skip:focus { top: 8px; }
+</style>
+</head>
+<body>
+<a class="skip" href="#content">본문으로 이동</a>
+<div class="wrap">
+<nav class="top" aria-label="사이트 탐색"><a href="../">← 앱 정책 목록</a></nav>
+<nav class="page-nav" aria-label="AD Password Day 안내"><a href="./" aria-current="page">소개</a><a href="privacy.html">개인정보</a><a href="support.html">지원</a></nav>
+<main id="content" tabindex="-1">
+<header class="hero"><img class="mark" src="icon.png" alt="AD Password Day 아이콘" width="64" height="64"><div><h1>AD Password Day</h1><p class="meta">회사 AD 비밀번호 만료 확인과 변경</p></div></header>
+<p class="lead"><strong>메뉴 막대에서 회사 비밀번호의 만료일을 확인하고 변경하세요.</strong> 변경이 확인되면 새 비밀번호로 만료일을 다시 한 번 조회합니다.</p>
+<ul class="chips"><li>macOS 14 이상</li><li>회사 AD 직접 연결</li><li>선택적 키체인 저장</li></ul>
+<section class="card"><h2>주요 기능</h2>
+<ul><li>만료일까지 남은 기간, 마지막 변경일과 마지막 조회 상태를 확인합니다.</li><li>현재 비밀번호를 사용해 회사 계정의 비밀번호를 변경합니다.</li><li>비밀번호 변경 성공 후 새 비밀번호로 만료일을 자동으로 한 번 조회합니다.</li><li>저장을 선택한 경우 키체인에 저장한 비밀번호로 수동·주기 조회를 합니다.</li><li>직접 입력한 날짜로 계산한 수동 추정값은 AD 조회값과 구분합니다.</li></ul>
+</section>
+<section class="card"><h2>사용 전 회사 환경을 확인하세요</h2>
+<p>온프레미스 Active Directory Domain Services 계정이 필요합니다. 회사 IT 담당자에게 한 대의 AD 서버 호스트 이름, Kerberos realm, 계정과 LDAP 검색 기준을 확인하세요. 회사 네트워크 또는 VPN에 연결해야 할 수 있습니다.</p>
+<p>계정은 sAMAccountName 또는 같은 realm을 붙인 형식을 지원하며, LDAP 검색 기준은 DC 항목만 사용합니다. Entra ID 전용 계정, 브라우저 SSO, MFA, 웹사이트 비밀번호 자동 완성은 지원하지 않습니다. 현재 비밀번호를 잊었다면 회사의 계정 복구 절차를 이용하세요.</p>
+<p><a href="support.html">설정 방법과 자세한 지원 조건</a></p>
+</section>
+<section class="card"><h2>비밀번호 저장은 직접 선택하세요</h2>
+<p>기본 설정에서는 비밀번호를 저장하지 않습니다. ‘키체인 저장 · 자동 조회’를 켜고 인증에 성공하면 해당 계정·연결 설정에 한정해 이 Mac의 키체인에 저장합니다. iCloud로 동기화하지 않습니다.</p>
+<p>저장을 끄면 자동 인증을 중단하고 해당 비밀번호를 삭제합니다. 키체인이 잠겨 있으면 삭제를 대기했다가 다시 시도합니다. 앱 제거만으로 키체인 항목이 삭제된다고 보장할 수 없으므로, 제거 전에 저장을 끄고 삭제가 완료되도록 해 주세요.</p>
+<p><a href="privacy.html">개인정보 처리방침 확인</a></p>
+</section>
+<section class="card"><h2>회사 계정 없이 체험하기</h2>
+<p>‘설정 없이 체험하기’에서 합성 계정으로 조회·비밀번호 변경·오류·저장 후 조회 흐름을 살펴볼 수 있습니다. 이미 계정을 설정했다면 ‘체험 모드 열기’를 선택하세요. 입력 화면의 ‘샘플 입력’으로 체험용 값을 채울 수 있습니다.</p>
+<p>체험은 분리된 메모리 안의 시뮬레이션입니다. 실제 회사 AD나 시스템 키체인을 사용하지 않으며, 실제 회사 환경의 연결·암호화·키체인 동작을 검증한 결과가 아닙니다. 체험에는 실제 비밀번호를 입력하지 마세요.</p>
+</section>
+<hr class="lang">
+<section lang="en" aria-labelledby="english-intro">
+<h2 id="english-intro" class="translation-title">AD Password Day</h2>
+<p class="translation-date">A macOS menu bar app for company AD password expiry and changes</p>
+<section class="card"><h3>What it does</h3><p>Check the password expiry date for an existing on-premises Active Directory Domain Services account and change a password you already know. After a confirmed change, the app checks expiry once with the new password. Optional Keychain storage enables later manual and scheduled checks. The app interface is currently in Korean.</p></section>
+<section class="card"><h3>Before you start</h3><p>Use macOS 14 or later and obtain the AD host, Kerberos realm, account and LDAP search base from your IT team. A company network or VPN may be required. The app uses one configured DC with Kerberos and encrypted LDAP GSSAPI. Entra-only accounts, browser SSO and MFA flows are not supported.</p></section>
+<section class="card"><h3>Try the simulated workflow</h3><p>Choose <b>설정 없이 체험하기</b> (Try without setup), or <b>체험 모드 열기</b> (Open demo mode) when an account is already configured. The demo uses synthetic data and memory-only storage. It does not connect to a real AD server or use system Keychain. Do not enter real passwords.</p><p><a href="support.html#english-support">English setup guide</a> · <a href="privacy.html#policy-en">Privacy policy in English</a></p></section>
+</section>
+</main>
+<footer>
+<p>AD Password Day · macOS 14 이상</p>
+<p>운영자: 더온(DEON) · 개인사업자 · 대표자 조승열<br><span lang="en">Operator: DEON, a sole proprietorship represented by JO SEUNG YUL</span></p>
+<p>앱 지원·개인정보 문의 / <span lang="en">Support and privacy</span>: <a href="mailto:s10cho.deon@gmail.com">s10cho.deon@gmail.com</a></p>
+</footer>
+</div>
+</body>
+</html>
