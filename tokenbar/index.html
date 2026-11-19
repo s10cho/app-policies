@@ -13,9 +13,11 @@
 <div class="wrap">
   <nav class="top"><a href="../">← 앱 정책 목록</a></nav>
   <header class="hero"><img class="mark" src="icon.png" alt="TokenBar 아이콘" width="64" height="64"><div><h1>TokenBar 지원</h1><p class="meta">Codex·Claude Code 로컬 사용량을 Mac 메뉴 막대에서 확인</p></div></header>
-  <section class="card"><h2>시작하기</h2><p>TokenBar를 실행하고 메뉴 막대의 아이콘을 누르세요. <b>설정 → 로컬 기록 접근</b>에서 Codex의 <code>~/.codex</code> 폴더와 Claude Code의 <code>~/.claude</code> 폴더를 각각 선택하세요. 파일 선택창에 숨김 폴더가 표시됩니다. 읽기 권한만 요청합니다.</p></section>
-  <section class="card"><h2>한도가 표시되지 않을 때</h2><p>토큰 수는 이 Mac에 남은 최근 세션 기록을 집계합니다. 한도 사용률은 토큰 수로 추정하지 않고, 제공자가 로컬 기록에 남긴 값만 표시합니다. Codex의 5시간 항목처럼 요금제에 없는 한도는 표시되지 않습니다. Claude의 5시간·주간 한도는 기존 Claude Code statusLine 연동이 <code>.claude/token-bar-rate-limits.json</code> 파일을 갱신하는 경우에만 나타납니다.</p></section>
-  <section class="card"><h2>갱신과 개인정보</h2><p>상세 화면 하단의 <b>새로고침 아이콘</b>을 누르거나 설정에서 자동 갱신 간격을 바꿀 수 있습니다. 기록은 기기 안에서만 읽습니다. 자세한 내용은 <a href="privacy.html">개인정보처리방침</a>을 확인하세요.</p></section>
+  <section class="card"><h2>시작하기</h2><p>TokenBar를 처음 실행할 때는 폴더 접근 권한을 요청하지 않습니다. 메뉴 막대의 아이콘을 누르고 <b>설정 → 로컬 기록 접근</b>에서 제공자별로 macOS 파일 선택창을 열어 Codex의 <code>~/.codex</code>, Claude Code의 <code>~/.claude</code> 등 원하는 폴더를 직접 선택하세요. 숨김 폴더도 선택할 수 있으며, 선택한 폴더는 읽기 전용으로만 연결됩니다.</p></section>
+  <section class="card"><h2>폴더 연결과 해제</h2><p>선택한 폴더의 읽기 전용 접근 권한은 이 Mac에서 유지되어 앱을 다시 실행해도 연결과 입력값이 보존됩니다. 더 이상 사용하지 않을 제공자는 <b>설정 → 로컬 기록 접근</b>에서 연결을 해제할 수 있습니다. TokenBar는 폴더에 쓰거나 제공자 설정을 변경하지 않습니다.</p></section>
+  <section class="card"><h2>Task Budget</h2><p>계정이나 폴더를 연결하지 않아도 작업예산 플래너를 사용할 수 있습니다. 총 예산, 사용량, 작업 수를 입력하면 남은 예산과 작업당 예산을 기기 안에서 계산합니다. 예를 들어 총 100,000, 사용 20,000, 작업 3개면 남은 예산은 80,000, 작업당 약 26,666이며 작업을 4개로 바꾸면 20,000입니다. 입력값은 앱을 다시 실행해도 보존됩니다.</p><p>제공자 폴더를 연결한 경우에는 오늘 측정한 토큰 사용량을 계획에 가져올 수 있습니다. Task Budget은 사용자가 세우는 작업예산으로, Codex·Claude Code 등의 구독 또는 제공자 한도와는 별개입니다.</p></section>
+  <section class="card"><h2>한도가 표시되지 않을 때</h2><p>토큰 수는 연결한 제공자 폴더에 남은 최근 세션 기록을 집계합니다. 한도 사용률은 토큰 수로 추정하지 않고, 제공자가 로컬 기록에 남긴 값만 표시합니다. Codex의 5시간 항목처럼 요금제에 없는 한도는 표시되지 않습니다. Claude의 5시간·주간 한도는 기존 Claude Code statusLine 연동이 <code>.claude/token-bar-rate-limits.json</code> 파일을 갱신하는 경우에만 나타납니다.</p></section>
+  <section class="card"><h2>갱신과 개인정보</h2><p>상세 화면 하단의 <b>새로고침 아이콘</b>을 누르거나 설정에서 자동 갱신 간격을 바꿀 수 있습니다. 기록과 계산은 기기 안에서만 처리됩니다. 자세한 내용은 <a href="privacy.html">개인정보처리방침</a>을 확인하세요.</p></section>
   <section class="card"><h2>문의</h2><p>운영자: <a href="https://s10cho.github.io/deon/">더온(DEON)</a> · 개인사업자 · 대표자 조승열</p><p>앱 지원 문의: <a href="mailto:s10cho.deon@gmail.com">s10cho.deon@gmail.com</a></p><p><a href="https://github.com/s10cho/app-policies/issues/new">GitHub 이슈</a>로도 문의할 수 있습니다. 이슈는 공개될 수 있으므로 세션 기록이나 인증 정보를 첨부하지 마세요.</p></section>
   <footer>TokenBar · macOS 13 이상</footer>
 </div>
