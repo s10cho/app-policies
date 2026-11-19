@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>개인정보처리방침 — TokenBar</title>
-<meta name="description" content="TokenBar 개인정보처리방침. 이 Mac의 Codex·Claude Code 로컬 기록을 읽기 전용으로 읽고 외부로 전송하지 않습니다.">
+<meta name="description" content="TokenBar 개인정보처리방침. 사용자가 선택한 Codex·Claude Code 로컬 기록을 읽기 전용으로 읽고 외부로 전송하지 않습니다.">
 <link rel="icon" href="icon.png">
 <link rel="stylesheet" href="../assets/style.css">
 <style>:root { --accent: #289cb7; --accent-wash: #e6f8fb; }</style>
@@ -14,41 +14,45 @@
   <nav class="top"><a href="../">← 앱 정책 목록</a> · <a href="./">TokenBar 지원</a></nav>
   <header class="hero">
     <img class="mark" src="icon.png" alt="TokenBar 아이콘" width="64" height="64">
-    <div><h1>개인정보처리방침</h1><p class="meta">TokenBar · 시행일 2026년 11월 17일</p></div>
+    <div><h1>개인정보처리방침</h1><p class="meta">TokenBar · 시행일 2026년 11월 19일</p></div>
   </header>
 
-  <p class="lead"><strong>TokenBar는 이 Mac의 Codex·Claude Code 기록을 기기 안에서 읽기 전용으로 읽습니다.</strong> 운영자에게 기록이나 사용량을 전송하지 않습니다.</p>
+  <p class="lead"><strong>TokenBar는 사용자가 이 Mac에서 직접 선택해 연결한 Codex·Claude Code 등의 로컬 기록을 읽기 전용으로 읽습니다.</strong> 운영자에게 기록, 사용량 또는 설정을 전송하지 않습니다.</p>
   <ul class="chips"><li>로컬 처리</li><li>외부 전송 없음</li><li>광고 없음</li><li>추적 없음</li><li>로그인 없음</li></ul>
 
   <section class="card"><h2><span class="n">1</span>읽는 데이터</h2>
-    <p>기본 위치 <code>~/.codex</code>·<code>~/.claude</code> 또는 사용자가 설정에서 고른 폴더 안의 로컬 세션 기록에서 토큰 수와 제공자가 기록한 한도 사용률·초기화 시각을 읽습니다. 세션 기록에는 대화 내용이 함께 들어 있을 수 있지만, 앱은 사용량 계산에 필요한 필드만 해석하고 대화 내용을 화면에 표시하거나 별도로 저장하지 않습니다. Claude 한도 값은 해당 폴더에 이미 존재하는 TokenBar 한도 파일이 있을 때만 읽습니다.</p>
+    <p>사용자가 설정에서 연결한 제공자 폴더의 로컬 세션 기록에서 토큰 수와 제공자가 기록한 한도 사용률·초기화 시각을 읽습니다. 세션 기록에는 대화 내용이 함께 들어 있을 수 있지만, 앱은 사용량 계산에 필요한 필드만 해석하고 대화 내용을 화면에 표시하거나 별도로 저장하지 않습니다. Claude 한도 값은 해당 폴더에 이미 존재하는 TokenBar 한도 파일이 있을 때만 읽습니다.</p>
   </section>
   <section class="card"><h2><span class="n">2</span>저장</h2>
-    <p>표시 방식, 갱신 간격, 제공자 순서와 사용자가 다른 폴더를 고른 경우 그 폴더의 읽기 전용 접근 권한을 이 Mac의 앱 저장 공간에 보관합니다. 세션 기록은 복사하거나 서버에 업로드하지 않습니다. 폴더 원본은 해당 CLI 앱이 관리하며 TokenBar가 삭제하지 않습니다.</p>
+    <p>표시 방식, 갱신 간격, 제공자 순서, Task Budget의 입력값과 사용자가 선택한 폴더의 읽기 전용 security-scoped bookmark를 이 Mac의 앱 저장 공간에 보관합니다. 재실행 후에도 연결과 입력값이 유지됩니다. 세션 기록은 복사하거나 서버에 업로드하지 않으며, 폴더 원본은 해당 CLI 앱이 관리하고 TokenBar가 삭제하지 않습니다.</p>
   </section>
   <section class="card"><h2><span class="n">3</span>네트워크·제3자</h2>
-    <p>현재 macOS 앱에는 계정, 분석 도구, 광고 SDK, 추적기 또는 자체 서버 통신이 없습니다. TokenBar는 사용량, 세션 기록, 설정을 운영자나 제3자에게 전송하지 않습니다.</p>
+    <p>현재 macOS 앱에는 계정, 분석 도구, 광고 SDK, 추적기 또는 자체 서버 통신이 없습니다. TokenBar는 사용량, 세션 기록, Task Budget 입력값 또는 설정을 운영자나 제3자에게 전송하지 않습니다.</p>
   </section>
   <section class="card"><h2><span class="n">4</span>권한과 선택</h2>
-    <p>앱은 macOS 샌드박스 안에서 기본 위치 <code>~/.codex</code>·<code>~/.claude</code>만 읽기 전용으로 접근할 수 있도록 허가받았으며, 그 밖의 폴더는 사용자가 macOS 파일 선택창에서 직접 고른 경우에만 읽습니다. 앱은 이 폴더들에 쓰거나 Claude Code 설정을 바꾸지 않습니다. Claude 한도 연동은 선택 사항이며, 앱이 복사해 주는 안내문을 사용자가 Claude Code에 직접 붙여 넣어 구성합니다. 연동을 구성하면 Claude Code가 한도 사용률과 초기화 시각만 <code>~/.claude/token-bar-rate-limits.json</code>에 저장합니다. 설정에서 기본 폴더로 되돌리거나 앱을 삭제할 수 있습니다.</p>
+    <p>처음 실행할 때 TokenBar는 폴더 접근을 요청하지 않습니다. 사용자가 제공자별 macOS 파일 선택창에서 <code>~/.codex</code>, <code>~/.claude</code> 등 원하는 폴더를 직접 선택한 경우에만 그 폴더를 읽기 전용으로 연결합니다. 설정에서 각 제공자 연결을 해제할 수 있습니다. 앱은 선택한 폴더에 쓰거나 Claude Code 설정을 바꾸지 않습니다. Claude 한도 연동은 선택 사항이며, 앱이 복사해 주는 안내문을 사용자가 Claude Code에 직접 붙여 넣어 구성합니다. 연동을 구성하면 Claude Code가 한도 사용률과 초기화 시각만 <code>~/.claude/token-bar-rate-limits.json</code>에 저장합니다.</p>
   </section>
-  <section class="card"><h2><span class="n">5</span>변경과 문의</h2>
+  <section class="card"><h2><span class="n">5</span>Task Budget</h2>
+    <p>Task Budget은 계정이나 폴더 연결 없이도 사용할 수 있는 기기 내 작업예산 플래너입니다. 총 예산, 사용량, 작업 수를 바탕으로 남은 예산과 작업당 예산을 로컬에서 계산하며, 연결한 제공자의 오늘 측정 토큰 사용량을 계획에 가져올 수 있습니다. 이는 사용자가 세우는 작업예산으로, 제공자 또는 구독 한도와는 별개입니다.</p>
+  </section>
+  <section class="card"><h2><span class="n">6</span>변경과 문의</h2>
     <p>데이터 처리 방식이 달라지면 배포 전에 이 페이지를 갱신합니다.</p>
-    <p class="note">2026년 11월 17일 개정: 운영자와 고객 문의처를 더온(DEON) 기준으로 정리했습니다. 이번 개정은 운영자·문의처 안내에 관한 것입니다.</p>
+    <p class="note">2026년 11월 19일 개정: 빌드 14의 사용자 선택형 폴더 연결과 Task Budget을 반영했습니다. 앱이 기본 폴더에 자동으로 접근한다는 이전 설명을 바로잡고, 선택한 폴더의 읽기 전용 bookmark 보관과 제공자별 연결 해제를 안내합니다.</p>
     <p>운영자: <a href="https://s10cho.github.io/deon/">더온(DEON)</a> · 개인사업자 · 대표자 조승열</p>
     <p>앱 지원·개인정보 관련 문의: <a href="mailto:s10cho.deon@gmail.com">s10cho.deon@gmail.com</a></p>
     <p><a href="https://github.com/s10cho/app-policies/issues/new">GitHub 이슈</a>로도 문의할 수 있습니다. 이슈는 공개될 수 있으므로 세션 기록이나 계정 정보를 올리지 마세요.</p>
   </section>
 
   <hr class="lang">
-  <header class="hero" lang="en"><div><h1>Privacy Policy</h1><p class="meta">TokenBar · Effective November 17, 2026</p></div></header>
+  <header class="hero" lang="en"><div><h1>Privacy Policy</h1><p class="meta">TokenBar · Effective November 19, 2026</p></div></header>
   <div lang="en">
-    <p class="lead"><strong>TokenBar reads Codex and Claude Code records on this Mac, read-only.</strong> It does not send logs or usage data to the developer.</p>
-    <section class="card"><h2>Data read</h2><p>The app reads token counts and provider-reported quota percentages and reset times from local session records in the default <code>~/.codex</code> and <code>~/.claude</code> folders, or folders you choose in Settings folders. Session files can contain conversation content; TokenBar parses only fields needed for usage totals and does not display or separately store conversation content. Claude quota data appears only when an existing local TokenBar quota file is available.</p></section>
-    <section class="card"><h2>Storage</h2><p>Display preferences, refresh interval, provider order, and read-only bookmarks for any folder you choose are stored in the app's local container. TokenBar does not copy session files or upload them. It does not delete source files.</p></section>
-    <section class="card"><h2>Network and third parties</h2><p>The current macOS app has no accounts, analytics, advertising SDKs, trackers, or app server requests. It does not transmit logs, usage totals, or settings to us or to third parties.</p></section>
-    <section class="card"><h2>Permission and choice</h2><p>Within the macOS sandbox, the app is entitled to read only the default <code>~/.codex</code> and <code>~/.claude</code> folders, read-only. It reads any other folder only after you choose it in the macOS file picker. The app does not write to these folders or change Claude Code settings. The Claude quota bridge is optional: you configure it by pasting a prompt the app copies into Claude Code, and Claude Code then stores only quota percentages and reset times in <code>~/.claude/token-bar-rate-limits.json</code>. You can switch back to the default folders in Settings or remove the app.</p></section>
-    <section class="card"><h2>Changes and contact</h2><p>We will update this page before changing how data is handled.</p><p class="note">Updated November 17, 2026: operator and customer support details now identify DEON. This update concerns operator and contact information.</p><p>Operator: <a href="https://s10cho.github.io/deon/">DEON</a>, a sole proprietorship represented by JO SEUNG YUL.</p><p>App support and privacy inquiries: <a href="mailto:s10cho.deon@gmail.com">s10cho.deon@gmail.com</a></p><p>You can also open a <a href="https://github.com/s10cho/app-policies/issues/new">GitHub issue</a>. Issues may be public; do not post session logs or account details.</p></section>
+    <p class="lead"><strong>TokenBar reads local Codex, Claude Code, and other provider records only from folders that you choose and connect on this Mac, read-only.</strong> It does not send logs, usage, or settings to the developer.</p>
+    <section class="card"><h2>Data read</h2><p>The app reads token counts and provider-reported quota percentages and reset times from local session records in provider folders you connect in Settings. Session files can contain conversation content; TokenBar parses only fields needed for usage totals and does not display or separately store conversation content. Claude quota data appears only when an existing local TokenBar quota file is available.</p></section>
+    <section class="card"><h2>Storage</h2><p>Display preferences, refresh interval, provider order, Task Budget inputs, and read-only security-scoped bookmarks for folders you select are stored in the app's local container. Connections and inputs remain after relaunch. TokenBar does not copy session files, upload them, or delete source files.</p></section>
+    <section class="card"><h2>Network and third parties</h2><p>The current macOS app has no accounts, analytics, advertising SDKs, trackers, or app server requests. It does not transmit logs, usage totals, Task Budget inputs, or settings to us or to third parties.</p></section>
+    <section class="card"><h2>Permission and choice</h2><p>On first launch, TokenBar does not request folder access. It connects a folder such as <code>~/.codex</code> or <code>~/.claude</code> read-only only after you choose it in the provider-specific macOS file picker. You can disconnect each provider in Settings. The app does not write to selected folders or change Claude Code settings. The Claude quota bridge is optional: you configure it by pasting a prompt the app copies into Claude Code, and Claude Code then stores only quota percentages and reset times in <code>~/.claude/token-bar-rate-limits.json</code>.</p></section>
+    <section class="card"><h2>Task Budget</h2><p>Task Budget is an on-device work-budget planner that can be used without an account or folder connection. It calculates remaining and per-task budgets locally from the total budget, amount spent, and task count. When you connect a provider, you can import that provider's measured token usage for today into a plan. A Task Budget is your own planning budget, separate from a provider or subscription limit.</p></section>
+    <section class="card"><h2>Changes and contact</h2><p>We will update this page before changing how data is handled.</p><p class="note">Updated November 19, 2026: this policy reflects build 14's user-selected folder connections and Task Budget. It corrects the prior description of automatic default-folder access and explains read-only bookmark storage and per-provider disconnect.</p><p>Operator: <a href="https://s10cho.github.io/deon/">DEON</a>, a sole proprietorship represented by JO SEUNG YUL.</p><p>App support and privacy inquiries: <a href="mailto:s10cho.deon@gmail.com">s10cho.deon@gmail.com</a></p><p>You can also open a <a href="https://github.com/s10cho/app-policies/issues/new">GitHub issue</a>. Issues may be public; do not post session logs or account details.</p></section>
   </div>
   <footer>TokenBar · 광고 없음 · 인앱 결제 없음</footer>
 </div>
